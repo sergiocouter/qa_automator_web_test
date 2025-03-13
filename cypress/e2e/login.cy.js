@@ -5,7 +5,7 @@
 //funcionalidades - suite de testes
 describe("Login", () => {
 
-    // beforeEach executa um bloco de código, antes de cada teste, dentro de um "describe"
+    // beforeEach executa um bloco de código, antes de cada teste, dentro de um describe
     beforeEach(() => {
 
         // cy.viewport é usada para testar em outros tamanhos de tela
