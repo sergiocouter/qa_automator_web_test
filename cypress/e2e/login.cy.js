@@ -19,10 +19,10 @@ describe("Login", () => {
         cy.visit("http://www.aprendendotestar.com.br/treinar-automacao.php");
 
         //Preencher o e-mail
-        cy.get(':nth-child(2) > td > input').type("sergiocouter@gmail.com");
+        cy.get(':nth-child(2) > td > input').type("teste@gmail.com");
 
         //Preencher a senha
-        cy.get(':nth-child(4) > td > input').type("Arthur@22");
+        cy.get(':nth-child(4) > td > input').type("Senha@55");
 
         //Preencher o nome
         cy.get(':nth-child(6) > td > input').type("Sérgio Couter")
@@ -37,7 +37,7 @@ describe("Login", () => {
     //cenario - caso de teste
     it("E-mail inválido", () => {
         cy.visit("http://www.aprendendotestar.com.br/treinar-automacao.php");
-        cy.get(':nth-child(2) > td > input').type("sergiocoutergmail.com");
+        cy.get(':nth-child(2) > td > input').type("teste@gmail.com");
         cy.get(':nth-child(4) > td > input').type("senha@22");
         cy.get(':nth-child(6) > td > input').type("Serjão");
         cy.get('.btn-info').click();
@@ -50,7 +50,7 @@ describe("Login", () => {
     //cenario - caso de teste
     it("Senha Inválida", () => {
         cy.visit("http://www.aprendendotestar.com.br/treinar-automacao.php");
-        cy.get(':nth-child(2) > td > input').type("sergiocouter@gmail.com");
+        cy.get(':nth-child(2) > td > input').type("teste@gmail.com");
         cy.get(':nth-child(4) > td > input').type("senha@22");
         cy.get(':nth-child(6) > td > input').type("Serjão");
         cy.get('.btn-info').click();
